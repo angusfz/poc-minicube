@@ -2,17 +2,25 @@
 
 ## Install tools (MAC)
 
-```shell
+```bash
 $ brew update && brew install minikube
 ```
 
 ## Start k8s cluster with virutalbox
 
-```shell
+```bash
 # Start a cluster using the virtualbox driver
 $ minikube start --vm-driver=virtualbox
 
 # To make virtualbox the default driver
 $ minikube config set vm-driver virtualbox
 
+```
+
+
+## Misc
+
+```bash
+# Tunnel makes services of type LoadBalancer accessible on localhost
+$ minikube tunnel 
 ```
